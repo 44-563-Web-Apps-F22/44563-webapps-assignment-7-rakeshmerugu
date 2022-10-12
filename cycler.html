@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <!-- Part 7: Construct a “cycler” of items.  Items will be added and removed from the end.-->
+   
     <div class="container text-center">
         <div class="container-fluid p-5 bg-warning text-black text-center">
             <h1>Merugu Rakesh builds a cycler</h1>
@@ -52,11 +52,11 @@
             <button class="btn btn-warning" type="submit" onclick="makeNewDiv()">Add Value</button>
             <button class="btn btn-danger" type="submit" onclick="get()">Get</button>
             <button class="btn btn-success" type="submit" onclick="spin()">Spin</button>
-           <!-- <button class="btn btn-primary" type="submit" onclick="swap()">Swap</button>-->
+         
         </div>
     </div>
     
-    <!-- Part 7: Construct a “cycler” of items. .-->
+   
     <script>
         function makeNewDiv() {
             let element = document.createElement("div")
@@ -69,7 +69,7 @@
             container.appendChild(element)
         }
     </script>
-    <!-- Part 8: Implement Get and Spin.--> 
+  
     <script>
         function get() {
             let cyclerItems = document.getElementsByClassName("cycler")
@@ -87,7 +87,7 @@
                 container.insertBefore(removedItem, container.firstChild)
             }
         }
-        // BONUS
+      
         function swap() {
                 let cyclerItems = document.getElementsByClassName("cycler")
                 let container = document.getElementById("target")
@@ -102,6 +102,12 @@
                 }
             }
     </script>
-
+<div class="container">
+    <ul class="pager">
+        <li class="previous">
+            
+        </li>
+    </ul>
+</div>
 </body>
 </html>	
